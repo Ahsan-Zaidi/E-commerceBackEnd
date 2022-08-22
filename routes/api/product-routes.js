@@ -128,6 +128,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+//delete a product
 router.delete('/:id', (req, res) => {
   Product.destroy({
     where:
@@ -146,4 +147,5 @@ router.delete('/:id', (req, res) => {
   })
 });
 
+//expote the file
 module.exports = router;

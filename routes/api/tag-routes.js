@@ -3,6 +3,7 @@ const { Tag, Product, ProductTag } = require('../../models');
 
 // The `/api/tags` endpoint
 
+//route to find all tags w included attributes
 router.get('/', (req, res) => {
   Tag.findAll({
     include:
@@ -19,6 +20,7 @@ router.get('/', (req, res) => {
   })
 });
 
+//route to find one specific tag by id with its attributes
 router.get('/:id', (req, res) => {
   Tag.findOne({
     where:
@@ -39,6 +41,7 @@ router.get('/:id', (req, res) => {
   })
 });
 
+//route to create a new tag 
 router.post('/', (req, res) => {
   Tag.create({
     tag_name:req.body.tag_name
@@ -49,6 +52,7 @@ router.post('/', (req, res) => {
   })
 });
 
+//route to update a tag by id
 router.put('/:id', (req, res) => {
   Tag.update({
     tag_name: req.body.tag_name
@@ -70,6 +74,7 @@ router.put('/:id', (req, res) => {
   })
 });
 
+//route to delete a tag by id
 router.delete('/:id', (req, res) => {
   Tag.destroy({
     where:
@@ -87,4 +92,5 @@ router.delete('/:id', (req, res) => {
   })
 });
 
+//export the file
 module.exports = router;
