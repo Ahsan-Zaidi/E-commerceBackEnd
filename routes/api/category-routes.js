@@ -83,7 +83,7 @@ router.delete('/:id', (req, res) => {
   Category.destroy({
     where:
     {
-      id: req.param.id
+      id: req.params.id
     }
   }).then(categoryData => {
     if (!categoryData) {

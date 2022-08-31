@@ -27,11 +27,11 @@
 
 🔍 A mysql database and application backend for an e-commerce site. This application used Express.js API and Sequelize to interact with a MySQL database. This application displays creation of database using mySQL with models and associations. Then demonstrates the API Routes to perform RESTful CRUD operations displayed in my walk through videos.
 
-✋ [GitHub Repository] ()
+✋ [GitHub Repository] (https://github.com/Ahsan-Zaidi/E-commerceBackEnd)
 
 💻 Below is the gif showing the functionality of the application:
 
-[gif]()
+[gif](.assets/images/Demo.gif)
 
 
 ## ✋User Requirements
