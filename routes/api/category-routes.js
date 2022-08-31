@@ -64,7 +64,7 @@ router.put('/:id', (req, res) => {
     {
       where:
       {
-        id: req.param.id
+        id: req.params.id
       }
     }).then(categoryData => {
       if (!categoryData) {
